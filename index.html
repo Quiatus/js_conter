@@ -4,8 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <section class="counter">
+            <h1 class="counter__h1">People counter:</h1>
+            <h2 id="count-el" class="counter__h2">0</h2>
+
+            <div class="buttons">
+                <button id="increment-btn" class="counter__button">Increase</button>
+                <button id="decrement-btn" class="counter__button">Decrease</button>
+                <button id="reset-btn" class="counter__button">Reset</button>
+            </div>
+
+            <p class="counter__p">Previous counts:</p>
+            <div class="saves" id="counterdiv">
+                
+            </div>
+        </section>
+    </main>
 </body>
 </html>

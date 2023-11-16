@@ -1,0 +1,137 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* || RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || VARIABLES */
+
+:root {
+    /* Colors */
+
+    --BGCOLOR: #202025;
+    --SECTION-BGCOLOR: #282828;
+    --BUTTON-COLOR: #444;
+    --BUTTON-COLOR-INC: #575;
+    --BUTTON-COLOR-DEC: #755;
+    --BUTTON-COLOR-RESET: #775;
+    --FONT-COLOR: #BBB;
+    --FONT-COUNT-COLOR: aliceblue;
+
+    /* Borders */
+
+    --BORDER: 2px solid #666;
+
+    /* Paddings */
+
+    --PADDING: 1rem;
+
+    /* Transitions */
+
+    --BUTTON-TRANS: background-color 0.2s linear;
+    --BTN-TEXT-SHADOW: 0 0 2px var(--FONT-COUNT-COLOR);
+}
+
+/* || GENERAL STYLE */
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+body {
+    background-color: var(--BGCOLOR);
+    /* height: 100vh; */
+}
+
+/* || MAIN */
+
+.counter {
+    width: 450px;
+    margin: 2rem auto;
+    text-align: center;
+    border: var(--BORDER);
+    border-radius: 10px;
+    color: var(--FONT-COLOR);
+    padding: var(--PADDING);
+    background-color: var(--SECTION-BGCOLOR);
+}
+
+.counter__h1 {
+    letter-spacing: 0.1em;
+}
+
+.counter__h2 {
+    font-size: 3rem;
+    color: var(--FONT-COUNT-COLOR);
+    margin: 0.5rem auto;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.counter__button {
+    width: 30%;
+    padding: 0.5rem;
+    border: var(--BORDER);
+    border-radius: 10px;
+    font-size: 0.8em;
+    color: var(--FONT-COUNT-COLOR);
+    background-color: var(--BUTTON-COLOR);
+    transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:first-of-type:hover {
+    background-color: var(--BUTTON-COLOR-INC);
+    text-shadow: var(--BTN-TEXT-SHADOW);
+    transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:nth-of-type(2):hover {
+    background-color: var(--BUTTON-COLOR-DEC);
+    text-shadow: var(--BTN-TEXT-SHADOW);
+    transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:last-of-type:hover {
+    background-color: var(--BUTTON-COLOR-RESET);
+    text-shadow: var(--BTN-TEXT-SHADOW);
+    transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:active {
+    transform: scale(0.97);
+}
+
+.counter__p {
+    border-top: var(--BORDER);
+    margin-top: 1rem;
+    padding: 0.3rem 0;
+    text-align: left;
+}
+
+
+.counter__span {
+    color: var(--FONT-COUNT-COLOR);
+    font-weight: bold;
+}
+
+.saves p {
+    width: 50%;
+    padding: 0.1rem 0 0.1rem 0.5rem;
+    text-align: left;
+    color: var(--FONT-COUNT);
+    font-size: 0.65em;
+    border-bottom: 1px solid #666;
+}
+
+.saves span {
+    color: var(--FONT-COUNT-COLOR);
+    font-weight: bold;
+}
