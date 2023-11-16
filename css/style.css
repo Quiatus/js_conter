@@ -51,7 +51,7 @@ body {
 /* || MAIN */
 
 .counter {
-    width: 450px;
+    width: 400px;
     margin: 1rem auto;
     text-align: center;
     border: var(--BORDER);
@@ -59,10 +59,6 @@ body {
     color: var(--FONT-COLOR);
     padding: var(--PADDING);
     background-color: var(--SECTION-BGCOLOR);
-}
-
-.counter__h1 {
-    letter-spacing: 0.1em;
 }
 
 .counter__h2 {
@@ -88,29 +84,28 @@ body {
 
 .counter__button:first-of-type,
 .counter__button:last-of-type {
-    width: 15%;
+    width: 18%;
 }
 
 .counter__button:nth-of-type(2) {
     width: 50%;
 }
 
-.counter__button:first-of-type:hover {
-    background-color: var(--BUTTON-COLOR-RESET);
+.counter__button:hover {
     text-shadow: var(--BTN-TEXT-SHADOW);
     transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:first-of-type:hover {
+    background-color: var(--BUTTON-COLOR-RESET);
 }
 
 .counter__button:nth-of-type(2):hover {
     background-color: var(--BUTTON-COLOR-INC);
-    text-shadow: var(--BTN-TEXT-SHADOW);
-    transition: var(--BUTTON-TRANS);
 }
 
 .counter__button:last-of-type:hover {
     background-color: var(--BUTTON-COLOR-DEC);
-    text-shadow: var(--BTN-TEXT-SHADOW);
-    transition: var(--BUTTON-TRANS);
 }
 
 .counter__button:active {
