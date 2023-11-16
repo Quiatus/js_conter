@@ -52,7 +52,7 @@ body {
 
 .counter {
     width: 450px;
-    margin: 2rem auto;
+    margin: 1rem auto;
     text-align: center;
     border: var(--BORDER);
     border-radius: 10px;
@@ -77,36 +77,44 @@ body {
 }
 
 .counter__button {
-    width: 30%;
     padding: 0.5rem;
     border: var(--BORDER);
     border-radius: 10px;
-    font-size: 0.8em;
+    font-size: 1.2rem;
     color: var(--FONT-COUNT-COLOR);
     background-color: var(--BUTTON-COLOR);
     transition: var(--BUTTON-TRANS);
 }
 
+.counter__button:first-of-type,
+.counter__button:last-of-type {
+    width: 15%;
+}
+
+.counter__button:nth-of-type(2) {
+    width: 50%;
+}
+
 .counter__button:first-of-type:hover {
-    background-color: var(--BUTTON-COLOR-INC);
-    text-shadow: var(--BTN-TEXT-SHADOW);
-    transition: var(--BUTTON-TRANS);
-}
-
-.counter__button:nth-of-type(2):hover {
-    background-color: var(--BUTTON-COLOR-DEC);
-    text-shadow: var(--BTN-TEXT-SHADOW);
-    transition: var(--BUTTON-TRANS);
-}
-
-.counter__button:last-of-type:hover {
     background-color: var(--BUTTON-COLOR-RESET);
     text-shadow: var(--BTN-TEXT-SHADOW);
     transition: var(--BUTTON-TRANS);
 }
 
+.counter__button:nth-of-type(2):hover {
+    background-color: var(--BUTTON-COLOR-INC);
+    text-shadow: var(--BTN-TEXT-SHADOW);
+    transition: var(--BUTTON-TRANS);
+}
+
+.counter__button:last-of-type:hover {
+    background-color: var(--BUTTON-COLOR-DEC);
+    text-shadow: var(--BTN-TEXT-SHADOW);
+    transition: var(--BUTTON-TRANS);
+}
+
 .counter__button:active {
-    transform: scale(0.97);
+    transform: scale(0.98);
 }
 
 .counter__p {
@@ -115,7 +123,6 @@ body {
     padding: 0.3rem 0;
     text-align: left;
 }
-
 
 .counter__span {
     color: var(--FONT-COUNT-COLOR);
