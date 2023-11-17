@@ -6,29 +6,29 @@ const counterDiv = document.getElementById('counterdiv');
 let step = 0;
 
 function increment() {
-    let count = document.getElementById('count-el').innerText;
+    let count = document.getElementById('count-el').textContent;
     count++;
-    document.getElementById('count-el').innerText = count;
+    document.getElementById('count-el').textContent = count;
 }
 
 function decrement() {
-    let count = document.getElementById('count-el').innerText;
+    let count = document.getElementById('count-el').textContent;
 
     if (count > 0) {
         count--;
-        document.getElementById('count-el').innerText = count;
+        document.getElementById('count-el').textContent = count;
     }
 }
 
 function reset() {
     let counterSave = document.createElement('p');
     let counterSaveSpan = document.createElement('span');
-    let count = document.getElementById('count-el').innerText;
+    let count = document.getElementById('count-el').textContent;
 
     let today = new Date();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
-    step++;
+    step += 1;
 
     let countTime = document.createTextNode(step + '. ' + time + ' = ');
     let counText = document.createTextNode(count);
@@ -38,7 +38,7 @@ function reset() {
     counterSave.appendChild(counterSaveSpan);
     counterDiv.appendChild(counterSave);
 
-    document.getElementById('count-el').innerText = 0;
+    document.getElementById('count-el').textContent = 0;
 }
 
 

@@ -76,7 +76,7 @@ body {
     padding: 0.5rem;
     border: var(--BORDER);
     border-radius: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--FONT-COUNT-COLOR);
     background-color: var(--BUTTON-COLOR);
     transition: var(--BUTTON-TRANS);
